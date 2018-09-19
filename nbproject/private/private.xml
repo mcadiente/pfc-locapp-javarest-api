@@ -6,8 +6,10 @@
             <file>file:/C:/workspacenet8/LocAppWebIntegration/src/conf/persistence.xml</file>
             <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/LocAppStoresFacadeREST.java</file>
             <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/LocAppActiveStores.java</file>
+            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/ApplicationConfig.java</file>
             <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/LocAppActiveStoresFacadeREST.java</file>
             <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/util/AbstractFacade.java</file>
+            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/LocAppStoresAllFacadeREST.java</file>
         </group>
     </open-files>
 </project-private>
