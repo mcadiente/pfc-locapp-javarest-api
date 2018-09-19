@@ -46,7 +46,10 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "LocAppActiveStores.findByOwnerLastName", query = "SELECT v FROM LocAppActiveStores v WHERE v.ownerLastName = :ownerLastName")
     , @NamedQuery(name = "LocAppActiveStores.findByOwnerBday", query = "SELECT v FROM LocAppActiveStores v WHERE v.ownerBday = :ownerBday")
     , @NamedQuery(name = "LocAppActiveStores.findByOwnerMobileNumber", query = "SELECT v FROM LocAppActiveStores v WHERE v.ownerMobileNumber = :ownerMobileNumber")
-    , @NamedQuery(name = "LocAppActiveStores.findByOwnerEmailAdd", query = "SELECT v FROM LocAppActiveStores v WHERE v.ownerEmailAdd = :ownerEmailAdd")})
+    , @NamedQuery(name = "LocAppActiveStores.findByOwnerEmailAdd", query = "SELECT v FROM LocAppActiveStores v WHERE v.ownerEmailAdd = :ownerEmailAdd")
+   , @NamedQuery(name = "LocAppActiveStores.findByIntegrationStatus", query = "SELECT v FROM LocAppActiveStores v WHERE v.integrationStatus = :integrationStatus")
+    , @NamedQuery(name = "LocAppActiveStores.findByIntegrationUpdateDate", query = "SELECT v FROM LocAppActiveStores v WHERE v.integrationUpdateDate = :integrationUpdateDate")
+    , @NamedQuery(name = "LocAppActiveStores.findByCrmId", query = "SELECT v FROM LocAppActiveStores v WHERE v.crmId = :crmId")})
 public class LocAppActiveStores implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -106,6 +109,13 @@ public class LocAppActiveStores implements Serializable {
     private String ownerMobileNumber;
     @Column(name = "OwnerEmailAdd")
     private String ownerEmailAdd;
+    @Column(name = "IntegrationStatus")
+    private String integrationStatus;
+    @Column(name = "IntegrationUpdateDate")
+    @Temporal(TemporalType.TIMESTAMP)    
+    private Date integrationUpdateDate;
+    @Column(name = "CRMID")
+    private String crmId;
 
     public LocAppActiveStores() {
     }
@@ -268,6 +278,30 @@ public class LocAppActiveStores implements Serializable {
 
     public void setOwnerEmailAdd(String ownerEmailAdd) {
         this.ownerEmailAdd = ownerEmailAdd;
+    }
+
+    public String getIntegrationStatus() {
+        return integrationStatus;
+    }
+
+    public void setIntegrationStatus(String integrationStatus) {
+        this.integrationStatus = integrationStatus;
+    }
+
+    public Date getIntegrationUpdateDate() {
+        return integrationUpdateDate;
+    }
+
+    public void setIntegrationUpdateDate(Date integrationUpdateDate) {
+        this.integrationUpdateDate = integrationUpdateDate;
+    }
+
+    public String getCrmId() {
+        return crmId;
+    }
+
+    public void setCrmId(String crmId) {
+        this.crmId = crmId;
     }
     
 }

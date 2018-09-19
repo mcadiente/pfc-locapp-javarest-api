@@ -29,7 +29,6 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(com.pilmico.locapp.store.service.LocAppActiveStoresFacadeREST.class);
         resources.add(com.pilmico.locapp.store.service.LocAppStoresFacadeREST.class);
     }
     
