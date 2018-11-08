@@ -64,13 +64,13 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
 //        super.create(entity);
 //    }
     @PUT
-    @Path("update/{id}")
+    @Path("{id}")
     @Consumes({MediaType.APPLICATION_JSON})
     public void edit(@QueryParam("userId") String userId, @PathParam("id") Integer id, LocAppStores entity) {
 
         String api = "locapp/stores";
         String method = "put";
-        String url = "https://apiwrapper.pilmico.com/oracrm/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
+        String url = "https://api.pilmico.com/oraprodapi/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
 
         try {
 
@@ -85,7 +85,7 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
                         LocAppStores existingStore = locAppStoresAllFacadeREST.find(id);
 
                         Date now = new Date();
-                        existingStore.setIntegrationUpdateDate(entity.getIntegrationUpdateDate());
+                        existingStore.setIntegrationUpdateDate(now);
                         existingStore.setIntegrationStatus(entity.getIntegrationStatus());
                         existingStore.setCrmId(entity.getCrmId());
                         //locAppStoresAllFacadeREST.beginTransaction();
@@ -122,7 +122,7 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
 
         String api = "locapp/stores";
         String method = "get";
-        String url = "https://apiwrapper.pilmico.com/oracrm/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
+        String url = "https://api.pilmico.com/oraprodapi/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
 
         try {
 
@@ -145,6 +145,8 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
                 } else {
                     throw new WebApplicationException(new Throwable(PfcConstant.UNAUTHORIZED), 401);
                 }
+            }else{
+                throw new WebApplicationException(new Throwable(PfcConstant.UNAUTHORIZED), 401);
             }
 
         } catch (WebApplicationException e) {
@@ -160,7 +162,6 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
             throw new WebApplicationException(new Throwable("Bad Request!"), 400);
         }
 
-        return null;
     }
 
     protected EntityManager getEntityManager() {
@@ -187,10 +188,10 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
 
-            if (conn.getResponseCode() != 200) {
-                throw new RuntimeException("Failed : HTTP error code : "
-                        + conn.getResponseCode());
-            }
+//            if (conn.getResponseCode() != 200) {
+//                throw new RuntimeException("Failed : HTTP error code : "
+//                        + conn.getResponseCode());
+//            }
 
             BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
 

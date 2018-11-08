@@ -5,10 +5,10 @@
     <class>com.pilmico.locapp.store.LocAppStores</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://fg-dora.cr3emhygcv57.ap-southeast-1.rds.amazonaws.com:3306/TEST_FG_DORA?zeroDateTimeBehavior=convertToNull"/>
-      <property name="javax.persistence.jdbc.user" value="test_fg_dora"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://fg-dora.cr3emhygcv57.ap-southeast-1.rds.amazonaws.com:3306/FG_DORA?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="apiwrapper"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="3&amp;mrlodiECKZ"/>
+      <property name="javax.persistence.jdbc.password" value="LWrXH9mO7jdd"/>
     </properties>
   </persistence-unit>
 </persistence>
