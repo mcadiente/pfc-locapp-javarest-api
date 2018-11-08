@@ -6,9 +6,9 @@
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://fg-dora.cr3emhygcv57.ap-southeast-1.rds.amazonaws.com:3306/FG_DORA?zeroDateTimeBehavior=convertToNull"/>
-      <property name="javax.persistence.jdbc.user" value="fg_mrcadiente"/>
+      <property name="javax.persistence.jdbc.user" value="apiwrapper"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="rli1XKw*&amp;lK@"/>
+      <property name="javax.persistence.jdbc.password" value="LWrXH9mO7jdd"/>
     </properties>
   </persistence-unit>
 </persistence>
