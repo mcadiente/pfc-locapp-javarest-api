@@ -70,7 +70,7 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
 
         String api = "locapp/stores";
         String method = "put";
-        String url = "https://apiwrapper.pilmico.com/oracrm/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
+        String url = "https://api.pilmico.com/oraprodapi/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
 
         try {
 
@@ -122,7 +122,7 @@ public class LocAppStoresFacadeREST extends AbstractFacade<LocAppStores> {
 
         String api = "locapp/stores";
         String method = "get";
-        String url = "https://apiwrapper.pilmico.com/oracrm/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
+        String url = "https://api.pilmico.com/oraprodapi/webresources/developerAccess?userId=" + userId + "&api=" + api + "&method=" + method;
 
         try {
 

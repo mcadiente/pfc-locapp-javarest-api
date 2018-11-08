@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/conf/persistence.xml</file>
-            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/LocAppStoresFacadeREST.java</file>
-            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/LocAppActiveStores.java</file>
-            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/ApplicationConfig.java</file>
-            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/LocAppActiveStoresFacadeREST.java</file>
-            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/util/AbstractFacade.java</file>
-            <file>file:/C:/workspacenet8/LocAppWebIntegration/src/java/com/pilmico/locapp/store/service/LocAppStoresAllFacadeREST.java</file>
+            <file>file:/C:/workspacenet8/locapp-javarest-api/src/java/com/pilmico/locapp/store/service/ApplicationConfig.java</file>
+            <file>file:/C:/workspacenet8/locapp-javarest-api/src/java/com/pilmico/locapp/store/service/LocAppStoresFacadeREST.java</file>
+            <file>file:/C:/workspacenet8/locapp-javarest-api/web/META-INF/context.xml</file>
+            <file>file:/C:/workspacenet8/locapp-javarest-api/src/java/com/pilmico/locapp/store/service/LocAppActiveStoresFacadeREST.java</file>
+            <file>file:/C:/workspacenet8/locapp-javarest-api/src/java/com/pilmico/locapp/store/service/LocAppStoresAllFacadeREST.java</file>
+            <file>file:/C:/workspacenet8/locapp-javarest-api/src/conf/persistence.xml</file>
         </group>
     </open-files>
 </project-private>
